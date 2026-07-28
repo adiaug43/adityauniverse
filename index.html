@@ -5,45 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="assets/images/logo/AUlogo.png">
-  <link rel="stylesheet" href="https://github.com/adiaug43/adityauniverse/blob/f8baa9a17b0618cbc2bfaf19a2b66b972e0c5dc3/css/style.css" />
+  <link rel="icon" type="image/png" href="assets/images/logo/icon-au20260613_064235.png">
   <title>Aditya's Universe</title>
 </head>
 <body>
-  <!-- navbar
-  ----------------------------------- -->
-    <div class="navbar">
-        <p class="border"><a href="Index.html">home</a></p>
-        <p class="border"><a href="">about us</a></p>
-        <p class="border"><a href="Contect.html">contect us</a></p>
-        <p class="border"><a href="#">help</a></p>
-    </div>
   <main>
   <!-- secondPanel
 ----------------------------------- -->
     <div class="secondPanel">
-      <Style>
-        .secondPanel{
-          background-image: url('/assets/images/bg-image/more-items.jpg');
-        }
-      </Style>
       <div class="profile-box">
       <div class="logo-frame">
         <img class="logo" src="assets/images/logo/AUlogo.png" alt="logo">
       </div>
       <div class="profile-name">
         <h1 class="name">Aditya's Universe</h1>
-      <p class="handle">@adiaug</p>
+        <div class="nav-link">
+          <a class=" highlight" id="handle" href="index.html">@adiaug</a>
+          <a class=" highlight" href="12026.html">12026</a>
+          <a href="media.html" class=" highlight">Media</a>
+          <a href="quizDashboard.html" class=" highlight">Quiz</a>
+          <a href="coming-soon.html" class=" highlight">About</a>
+        </div>
       </div>
     </div>
 <!-- select item-type
 ----------------------------------- -->
     <div class="item-type-select">
       <select id="myNavigation" onchange="goToPage()">
-        <option value="">-- select Type of Items --</option>
+        <option value="">Menu </option>
         <option value="itemsBacket.html">ItemsBacket</option>
-        <option value="https://www.wikipedia.org">Wikipedia (Details)</option>
-        <option value="https://www.youtube.com">YouTube (Videos)</option>
+        <option value="12026.html">12026</option>
+        <option value="media.html">media</option>
+        <option value="quizDashboard.html">Quiz</option>
     </select>
     </div>
     </div>
@@ -60,50 +53,43 @@
             }
         }
     </script>
-    <h2 id="favourite" class="header2">Favourite</h2>
-    <!-- Favourite Items
-    ----------------------------------- -->
-    <div class="favourite-items">
+    <div class="card-container">
       <!-- card 01
       ----------------------------------- -->
       <div class="card">
         <div class="item-types">
           <h2>electronics</h2>
+          <a href="coming-soon.html"><p> →</p></a>
         </div>
         <div class="image-container">
           <!-- product1
           ----------------------------------- -->
-          <div class="image-frame">
-            <a href="home-decoration-led-light.html" class="image-link" target="_blank">
-              <img src="assets/images/ihave/electronics/home-decoration-led-light/home-decoration-led-light.jpeg" alt="Item01">
+          <div class="image-frame zoomIn">
+            <a href="product.html?id=home-decoration-led-light" class="image-link" target="_blank">
+              <img src="../database/thumbnails/ihave/electronics/home-decoration-led-light/home-decoration-led-light.aic" alt="Item01" loding="lazy">
             </a>
           </div>
           <!-- product2
           ----------------------------------- -->
-          <div class="image-frame">
-            <a href="bluetooth-headphone.html" class="image-link" target="_blank">
-              <img src="assets/images/ihave/electronics/bluetooth-headphone/bluetooth-headphone.jpeg" alt="Item02">
+          <div class="image-frame zoomIn">
+            <a href="product.html?id=mosquito-racket" class="image-link" target="_blank">
+              <img src="../database/thumbnails/ihave/electronics/mosquito-racket/mosquito-racket.aic" alt="Item02" loding="lazy">
             </a>
           </div>
           <!-- product3
           ----------------------------------- -->
-          <div class="image-frame">
-            <a href="M01Details.html" class="image-link" target="_blank">
-              <img src="Backet/Electronics/img03.jpg" alt="Item03">
+          <div class="image-frame zoomIn">
+            <a href="coming-soon.html" class="image-link" target="_blank">
+              <img src="../database/thumbnails/ihave/electronics/img01.aic" alt="Item03" loding="lazy">
             </a>
           </div>
           <!-- product4
           ----------------------------------- -->
-          <div class="image-frame">
-            <a href="M01Details.html" class="image-link" target="_blank">
-              <img src="Backet/Electronics/img04.jpg" alt="Item04">
+          <div class="image-frame zoomIn">
+            <a href="product.html?id=bluetooth-earbuds" class="image-link" target="_blank">
+              <img src="../database/thumbnails/ihave/electronics/bluetooth-earbuds/bluetooth-earbuds.aic" alt="Item04" loding="lazy">
             </a>
           </div>
-        </div>
-        <!-- product5
-          ----------------------------------- -->
-        <div class="see-more">
-          <p><a href="#">SEE MORE ≫</a></p>
         </div>
       </div>
       <!-- card 02
@@ -111,95 +97,93 @@
       <div class="card">
         <div class="item-types">
           <h2>lifestyle</h2>
+          <a href="coming-soon.html"><p> →</p></a>
         </div>
         <div class="image-container">
-          <div class="image-frame">
-      <a href="laptop-bag.html" class="image-link" target="_blank">
-        <img src="assets/images/ihave/lifestyle/laptop-bag/laptop-bag.jpeg" alt="Item01">
+          <!-- product_01 -->
+          <div class="image-frame zoomIn">
+      <a href="product.html?id=laptop-bag" class="image-link" target="_blank">
+        <img src="../database/thumbnails/ihave/lifestyle/laptop-bag/laptop-bag.aic" alt="Item01" loading="lazy">
       </a>
     </div>
-          <div class="image-frame">
-      <a href="M01Details.html" class="image-link" target="_blank">
-        <img src="Backet/Electronics/img02.jpg" alt="Item02">
+          <!-- product_02 -->
+          <div class="image-frame zoomIn">
+      <a href="product.html?id=pexpo-water-bottle" class="image-link" target="_blank">
+        <img src="../database/thumbnails/ihave/lifestyle/pexpo-water-bottle/pexpo-water-bottle.aic" alt="Item02" loading="lazy">
       </a>
     </div>
-          <div class="image-frame">
-      <a href="M01Details.html" class="image-link" target="_blank">
-        <img src="Backet/Electronics/img03.jpg" alt="Item03">
+          <!-- product_03 -->
+          <div class="image-frame zoomIn">
+      <a href="product.html?id=rosegold-ethnic" class="image-link" target="_blank">
+        <img src="../database/thumbnails/ihave/lifestyle/rosegold-ethnic/rosegold-ethnic.aic" alt="Item03">
       </a>
     </div>
-          <div class="image-frame">
-      <a href="M01Details.html" class="image-link" target="_blank">
-        <img src="Backet/Electronics/img04.jpg" alt="Item04">
+          <!-- product_04 -->
+          <div class="image-frame zoomIn">
+      <a href="coming-soon.html" class="image-link" target="_blank">
+        <img src="../database/thumbnails/ihave/lifestyle/earrings/earrings.aic" alt="Item04">
       </a>
     </div>
-        </div>
-        <div class="see-more">
-          <p><a href="#">SEE MORE ≫</a></p>
         </div>
       </div>
       <!-- card 03
       ----------------------------------- -->
       <div class="card">
         <div class="item-types">
-          <h2>Jar & Glass</h2>
+          <h2>Clothes</h2>
+          <a href="coming-soon.html"><p> →</p></a>
         </div>
         <div class="image-container">
-          <div class="image-frame">
-      <a href="M01Details.html" class="image-link" target="_blank">
-        <img src="Backet/Electronics/img01.jpg" alt="Item01">
+          <div class="image-frame zoomIn">
+      <a href="product.html?id=vebnor-lower" class="image-link" target="_blank">
+        <img src="../database/thumbnails/ihave/clothes/vebnor-lower/vebnor-lower.aic" alt="Item01">
       </a>
     </div>
-          <div class="image-frame">
-      <a href="M01Details.html" class="image-link" target="_blank">
-        <img src="Backet/Electronics/img02.jpg" alt="Item02">
+          <div class="image-frame zoomIn">
+      <a href="product.html?id=lower-innerwear" class="image-link" target="_blank">
+        <img src="../database/thumbnails/ihave/clothes/lower-innerware/lower-innerwearIMG_20260506_165720.aic" alt="Item02">
       </a>
     </div>
-          <div class="image-frame">
-      <a href="M01Details.html" class="image-link" target="_blank">
-        <img src="Backet/Electronics/img03.jpg" alt="Item03">
+          <div class="image-frame zoomIn">
+      <a href="product.html?id=upper-innerwear-mairun" class="image-link" target="_blank">
+        <img src="../database/thumbnails/ihave/clothes/upper-innerwear-mairun/upper-innerwear-mairunIMG_20260506_165952.aic" alt="Item03">
       </a>
     </div>
-          <div class="image-frame">
-      <a href="M01Details.html" class="image-link" target="_blank">
-        <img src="Backet/Electronics/img04.jpg" alt="Item04">
+          <div class="image-frame zoomIn">
+      <a href="product.html?id=upper-innerwear-white" class="image-link" target="_blank">
+        <img src="../database/thumbnails/ihave/clothes/upper-innerwear-white/upper-innerwear-whiteIMG_20260506_170258.aic" alt="Item04">
       </a>
     </div>
-        </div>
-        <div class="see-more">
-          <p><a href="#">SEE MORE ≫</a></p>
         </div>
       </div>
       <!-- card 04
       ----------------------------------- -->
      <div class="card">
         <div class="item-types">
-          <h2>Jar & Glass</h2>
+          <h2>Jar Glass</h2>
+          <a href="coming-soon.html"><p> →</p></a>
         </div>
         <div class="image-container">
-          <div class="image-frame">
-      <a href="M01Details.html" class="image-link" target="_blank">
-        <img src="Backet/Electronics/img01.jpg" alt="Item01">
+          <div class="image-frame zoomIn">
+      <a href="coming-soon.html" class="image-link" target="_blank">
+        <img src="../database/thumbnails/Kits/Images/loading.gif" alt="Item01">
       </a>
     </div>
-          <div class="image-frame">
-      <a href="M01Details.html" class="image-link" target="_blank">
-        <img src="Backet/Electronics/img02.jpg" alt="Item02">
+          <div class="image-frame zoomIn">
+      <a href="coming-soon.html" class="image-link" target="_blank">
+        <img src="../database/thumbnails/Kits/Images/loading.gif" alt="Item02">
       </a>
     </div>
-          <div class="image-frame">
-      <a href="M01Details.html" class="image-link" target="_blank">
-        <img src="Backet/Electronics/img03.jpg" alt="Item03">
+          <div class="image-frame zoomIn">
+      <a href="coming-soon.html" class="image-link" target="_blank">
+        <img src="../database/thumbnails/Kits/Images/loading.gif" alt="Item03">
       </a>
     </div>
-          <div class="image-frame">
-      <a href="M01Details.html" class="image-link" target="_blank">
-        <img src="Backet/Electronics/img04.jpg" alt="Item04">
+          <div class="image-frame zoomIn">
+      <a href="coming-soon.html" class="image-link" target="_blank">
+        <img src="../database/thumbnails/Kits/Images/loading.gif" alt="Item04">
       </a>
     </div>
-        </div>
-        <div class="see-more">
-          <p><a href="#">SEE MORE ≫</a></p>
         </div>
       </div>
     </div>
