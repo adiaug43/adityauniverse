@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coming Soon</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .coming-soon {
+      display: flex;
+      justify-content: center;
+      margin: 100px 0;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="backward">
+      <a class="border" href="index.html" onclick="return handleBack(event);">〈〈</a>
+      <script>
+        function handleBack(event) {
+        // Agar history me pichla page maujood hai (length 1 se zyada hai)
+        if (history.length > 1 && document.referrer !== "") {
+          history.back();
+        event.preventDefault(); // Default href (home page) par jaane se rokega
+        return false;
+        }
+        // Agar naya tab hai, toh yeh function kuch nahi karega aur 
+        // user automatic href me diye gaye page (index.html) par chala jayega.
+        return true;
+        }
+      </script>
+    </div>
+  </header>
+  <main>
+    <div class="coming-soon">
+    <h3>Coming Soon...</h3>
+    <a href="../database/docs/org.mozilla.firefox_143.0.4-2016118128_minAPI21(armeabi-v7a)(nodpi)_apkmirror.com.apk">downlode apk</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p> &#169; 2026 by Aditya's Universe 
+    <br>Thank &#9829 You</p>
+  </footer>
+</body>
+</html>
