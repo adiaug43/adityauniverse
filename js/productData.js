@@ -1,19 +1,4 @@
-// Demo data — generic sample entries with clearly-labeled placeholder images
-// (via placehold.co) so this file works out-of-the-box when hosted
-// (e.g. GitHub Pages) without any local /database/thumbnails folder or
-// personal information. Each image shows the product name as text so it
-// stays relevant to the item it represents (no random unrelated photos).
 
-// helper to build a labeled placeholder image url
-// colors: electronics = blue, cloth = green, lifestyle = orange
-const img = (text, color) =>
-  `https://placehold.co/500x500/${color}/ffffff?text=${encodeURIComponent(text)}&font=roboto`;
-
-const COLORS = {
-  electronics: "2563eb",
-  cloth: "16a34a",
-  lifestyle: "ea580c"
-};
 
 const inventory = {
   // product-01
