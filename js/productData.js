@@ -1,6 +1,19 @@
-// Demo data — replaced with generic sample entries and online placeholder images
-// so this file works out-of-the-box when hosted (e.g. GitHub Pages) without any
-// local /database/thumbnails folder or personal information.
+// Demo data — generic sample entries with clearly-labeled placeholder images
+// (via placehold.co) so this file works out-of-the-box when hosted
+// (e.g. GitHub Pages) without any local /database/thumbnails folder or
+// personal information. Each image shows the product name as text so it
+// stays relevant to the item it represents (no random unrelated photos).
+
+// helper to build a labeled placeholder image url
+// colors: electronics = blue, cloth = green, lifestyle = orange
+const img = (text, color) =>
+  `https://placehold.co/500x500/${color}/ffffff?text=${encodeURIComponent(text)}&font=roboto`;
+
+const COLORS = {
+  electronics: "2563eb",
+  cloth: "16a34a",
+  lifestyle: "ea580c"
+};
 
 const inventory = {
   // product-01
@@ -10,11 +23,11 @@ const inventory = {
     inBox: "headphone",
     location: "Storage Shelf B2",
     material: "plastic, other",
-    mainImg: "https://picsum.photos/seed/bluetooth-headphone/500/500",
+    mainImg: img("Bluetooth Headphone", COLORS.electronics),
     extraImages: [
-      "https://picsum.photos/seed/bluetooth-headphone-01/500/500",
-      "https://picsum.photos/seed/bluetooth-headphone-02/500/500",
-      "https://picsum.photos/seed/bluetooth-headphone-03/500/500"
+      img("Headphone - View 1", COLORS.electronics),
+      img("Headphone - View 2", COLORS.electronics),
+      img("Headphone - View 3", COLORS.electronics)
     ]
   },
   // product-02
@@ -24,12 +37,12 @@ const inventory = {
     inBox: "led strip with usb connector",
     location: "Drawer 3, Living Room Unit",
     material: "metal wire, plastic cable",
-    mainImg: "https://picsum.photos/seed/home-decoration-led-light/500/500",
+    mainImg: img("LED Decoration Light", COLORS.electronics),
     extraImages: [
-      "https://picsum.photos/seed/home-decoration-led-light-01/500/500",
-      "https://picsum.photos/seed/home-decoration-led-light-02/500/500",
-      "https://picsum.photos/seed/home-decoration-led-light-03/500/500",
-      "https://picsum.photos/seed/home-decoration-led-light-04/500/500"
+      img("LED Light - View 1", COLORS.electronics),
+      img("LED Light - View 2", COLORS.electronics),
+      img("LED Light - View 3", COLORS.electronics),
+      img("LED Light - View 4", COLORS.electronics)
     ]
   },
   // product-03
@@ -39,13 +52,13 @@ const inventory = {
     inBox: "one black and one gray lower",
     location: "Wardrobe, Section 2",
     material: "synthetic fiber",
-    mainImg: "https://picsum.photos/seed/vebnor-lower/500/500",
+    mainImg: img("Vebnor Lower", COLORS.cloth),
     extraImages: [
-      "https://picsum.photos/seed/vebnor-lower01/500/500",
-      "https://picsum.photos/seed/vebnor-lower02/500/500",
-      "https://picsum.photos/seed/vebnor-lower03/500/500",
-      "https://picsum.photos/seed/vebnor-lower04/500/500",
-      "https://picsum.photos/seed/vebnor-lower05/500/500"
+      img("Lower - View 1", COLORS.cloth),
+      img("Lower - View 2", COLORS.cloth),
+      img("Lower - View 3", COLORS.cloth),
+      img("Lower - View 4", COLORS.cloth),
+      img("Lower - View 5", COLORS.cloth)
     ]
   },
   //product-04
@@ -55,17 +68,17 @@ const inventory = {
     inBox: "a bag and rain-cover",
     location: "Hallway Closet",
     material: "synthetic fiber and plastic",
-    mainImg: "https://picsum.photos/seed/laptop-bag/500/500",
+    mainImg: img("Laptop Backpack", COLORS.lifestyle),
     extraImages: [
-      "https://picsum.photos/seed/laptop-bag-01/500/500",
-      "https://picsum.photos/seed/laptop-bag-02/500/500",
-      "https://picsum.photos/seed/laptop-bag-03/500/500",
-      "https://picsum.photos/seed/laptop-bag-04/500/500",
-      "https://picsum.photos/seed/laptop-bag-05/500/500",
-      "https://picsum.photos/seed/laptop-bag-06/500/500",
-      "https://picsum.photos/seed/laptop-bag-07/500/500",
-      "https://picsum.photos/seed/laptop-bag-08/500/500",
-      "https://picsum.photos/seed/laptop-bag-09/500/500"
+      img("Backpack - View 1", COLORS.lifestyle),
+      img("Backpack - View 2", COLORS.lifestyle),
+      img("Backpack - View 3", COLORS.lifestyle),
+      img("Backpack - View 4", COLORS.lifestyle),
+      img("Backpack - View 5", COLORS.lifestyle),
+      img("Backpack - View 6", COLORS.lifestyle),
+      img("Backpack - View 7", COLORS.lifestyle),
+      img("Backpack - View 8", COLORS.lifestyle),
+      img("Backpack - View 9", COLORS.lifestyle)
     ]
   },
   //product-05
@@ -75,13 +88,13 @@ const inventory = {
     inBox: "water bottle and rust preventer",
     location: "Kitchen Cabinet",
     material: "stainless steel",
-    mainImg: "https://picsum.photos/seed/pexpo-water-bottle/500/500",
+    mainImg: img("Water Bottle", COLORS.lifestyle),
     extraImages: [
-      "https://picsum.photos/seed/pexpo-water-bottle-01/500/500",
-      "https://picsum.photos/seed/pexpo-water-bottle-02/500/500",
-      "https://picsum.photos/seed/pexpo-water-bottle-03/500/500",
-      "https://picsum.photos/seed/pexpo-water-bottle-04/500/500",
-      "https://picsum.photos/seed/pexpo-water-bottle-05/500/500"
+      img("Bottle - View 1", COLORS.lifestyle),
+      img("Bottle - View 2", COLORS.lifestyle),
+      img("Bottle - View 3", COLORS.lifestyle),
+      img("Bottle - View 4", COLORS.lifestyle),
+      img("Bottle - View 5", COLORS.lifestyle)
     ]
   },
   //product-06
@@ -91,10 +104,10 @@ const inventory = {
     inBox: "single brown trunk",
     location: "Dresser Drawer",
     material: "100% super combed cotton",
-    mainImg: "https://picsum.photos/seed/lower-innerwear/500/500",
+    mainImg: img("Innerwear - Lower", COLORS.cloth),
     extraImages: [
-      "https://picsum.photos/seed/lower-innerwear-01/500/500",
-      "https://picsum.photos/seed/lower-innerwear-02/500/500"
+      img("Innerwear - View 1", COLORS.cloth),
+      img("Innerwear - View 2", COLORS.cloth)
     ]
   },
   //product-07
@@ -104,9 +117,9 @@ const inventory = {
     inBox: "single maroon 80cm sando vest",
     location: "Dresser Drawer",
     material: "100% super combed cotton",
-    mainImg: "https://picsum.photos/seed/upper-innerwear-maroon/500/500",
+    mainImg: img("Vest - Maroon", COLORS.cloth),
     extraImages: [
-      "https://picsum.photos/seed/upper-innerwear-maroon-01/500/500"
+      img("Vest Maroon - View 1", COLORS.cloth)
     ]
   },
   //product-08
@@ -116,9 +129,9 @@ const inventory = {
     inBox: "single white 80cm sando vest",
     location: "Dresser Drawer",
     material: "cotton",
-    mainImg: "https://picsum.photos/seed/upper-innerwear-white/500/500",
+    mainImg: img("Vest - White", COLORS.cloth),
     extraImages: [
-      "https://picsum.photos/seed/upper-innerwear-white-01/500/500"
+      img("Vest White - View 1", COLORS.cloth)
     ]
   },
   //product-09
@@ -128,13 +141,13 @@ const inventory = {
     inBox: "pair of earbuds, charging case and micro USB cable",
     location: "Desk Organizer",
     material: "mostly plastic, rubber, internal circuit and battery",
-    mainImg: "https://picsum.photos/seed/bluetooth-earbuds/500/500",
+    mainImg: img("Bluetooth Earbuds", COLORS.electronics),
     extraImages: [
-      "https://picsum.photos/seed/bluetooth-earbuds-01/500/500",
-      "https://picsum.photos/seed/bluetooth-earbuds-02/500/500",
-      "https://picsum.photos/seed/bluetooth-earbuds-03/500/500",
-      "https://picsum.photos/seed/bluetooth-earbuds-04/500/500",
-      "https://picsum.photos/seed/bluetooth-earbuds-05/500/500"
+      img("Earbuds - View 1", COLORS.electronics),
+      img("Earbuds - View 2", COLORS.electronics),
+      img("Earbuds - View 3", COLORS.electronics),
+      img("Earbuds - View 4", COLORS.electronics),
+      img("Earbuds - View 5", COLORS.electronics)
     ]
   },
   //product-10
@@ -144,12 +157,12 @@ const inventory = {
     inBox: "only mosquito racket",
     location: "Utility Cabinet",
     material: "plastic, metal net and other",
-    mainImg: "https://picsum.photos/seed/mosquito-racket/500/500",
+    mainImg: img("Mosquito Racket", COLORS.electronics),
     extraImages: [
-      "https://picsum.photos/seed/mosquito-racket-01/500/500",
-      "https://picsum.photos/seed/mosquito-racket-02/500/500",
-      "https://picsum.photos/seed/mosquito-racket-03/500/500",
-      "https://picsum.photos/seed/mosquito-racket-04/500/500"
+      img("Racket - View 1", COLORS.electronics),
+      img("Racket - View 2", COLORS.electronics),
+      img("Racket - View 3", COLORS.electronics),
+      img("Racket - View 4", COLORS.electronics)
     ]
   },
   //product-11
@@ -159,13 +172,13 @@ const inventory = {
     inBox: "one rosegold ethnic bracelet",
     location: "Jewelry Box",
     material: "stainless steel",
-    mainImg: "https://picsum.photos/seed/rosegold-ethnic/500/500",
+    mainImg: img("Rosegold Bracelet", COLORS.lifestyle),
     extraImages: [
-      "https://picsum.photos/seed/rosegold-ethnic01/500/500",
-      "https://picsum.photos/seed/rosegold-ethnic02/500/500",
-      "https://picsum.photos/seed/rosegold-ethnic03/500/500",
-      "https://picsum.photos/seed/rosegold-ethnic04/500/500",
-      "https://picsum.photos/seed/rosegold-ethnic05/500/500"
+      img("Bracelet - View 1", COLORS.lifestyle),
+      img("Bracelet - View 2", COLORS.lifestyle),
+      img("Bracelet - View 3", COLORS.lifestyle),
+      img("Bracelet - View 4", COLORS.lifestyle),
+      img("Bracelet - View 5", COLORS.lifestyle)
     ]
   },
 };
